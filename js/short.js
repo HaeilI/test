@@ -73,12 +73,12 @@ $(document).ready(function(){
 	
 	
 	
-	let s0 = h * 0;
-	let s1 = h * 1;
-	let s2 = h * 2;
-	let s3 = h * 3;
-	let s4 = h * 4;
-	let s5 = h * 5;
+	let s0 = (h * 0) - t;
+	let s1 = (h * 1) - t;
+	let s2 = (h * 2) - t;
+	let s3 = (h * 3) - t;
+	let s4 = (h * 4) - t;
+	let s5 = (h * 5) - t;
 	
 	/*//각 섹션의 높이를 변수에 할당.
 	let s0 = $(".sec").eq(0).offset().top; //절대값(브라우저기준 측정)=> 0
@@ -91,16 +91,6 @@ $(document).ready(function(){
 	
 	
 	 //500vh
-		
-		if ($(window).width()<600){
-			s0 -= t;
-			s1 -= t;
-			s2 -= t;
-			s3 -= t;
-			s4 -= t;
-			s5 -= t;
-			
-		}
 		
 	let st = 0;			
 	let last = 0;
