@@ -70,27 +70,37 @@ $(document).ready(function(){
 	const t = $("header").height();
 	console.log(t);
 	const h = $(window).height();
-	/*
-	for(i=0; i < 6; i++){
-		const s[i] = h*i;
-	}*/
 	
-	const s0 = (h * 0);
-	const s1 = (h * 1) - 80;
-	const s2 = (h * 2) - 80;
-	const s3 = h * 3;
-	const s4 = h * 4;
-	const s5 = h * 5;
-	/*
-	//각 섹션의 높이를 변수에 할당.
-	const s0 = $(".sec").eq(0).offset().top; //절대값(브라우저기준 측정)=> 0
-	const s1 = $(".sec").eq(1).offset().top; //100vh   937
-	const s2 = $(".sec").eq(2).offset().top; //200vh   1874
-	const s3 = $(".sec").eq(3).offset().top; //절대값(브라우저기준 측정)=> 0
-	const s4 = $(".sec").eq(4).offset().top; //100vh   937
-	const s5 = $(".sec").eq(5).offset().top;
+	
+	
+	let s0 = (h * 0);
+	let s1 = (h * 1);
+	let s2 = (h * 2);
+	let s3 = h * 3;
+	let s4 = h * 4;
+	let s5 = h * 5;
+	
+	/*//각 섹션의 높이를 변수에 할당.
+	let s0 = $(".sec").eq(0).offset().top; //절대값(브라우저기준 측정)=> 0
+	let s1 = $(".sec").eq(1).offset().top; //100vh   937
+	let s2 = $(".sec").eq(2).offset().top; //200vh   1874
+	let s3 = $(".sec").eq(3).offset().top; //절대값(브라우저기준 측정)=> 0
+	let s4 = $(".sec").eq(4).offset().top; //100vh   937
+	let s5 = $(".sec").eq(5).offset().top;
 	console.log(s2); //예) 1874 */
+	
+	
 	 //500vh
+		
+		if ($(window).width()<600){
+			s0 -= 75;
+			s1 -= 75;
+			s2 -= 75;
+			s3 -= 90;
+			s4 -= 90;
+			s5 -= 90;
+			
+		}
 		
 	let st = 0;			
 	let last = 0;
