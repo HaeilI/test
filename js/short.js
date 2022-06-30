@@ -67,15 +67,15 @@ $(document).ready(function(){
 	
 	//문서의 스크롤바높이를 0으로 설정
 	$(document).scrollTop(0);
-	const t = $("header").height();
+	const t = $("footer").height();
 	console.log(t);
 	const h = $(window).height();
 	
 	
 	
-	let s0 = (h * 0);
-	let s1 = (h * 1);
-	let s2 = (h * 2);
+	let s0 = h * 0;
+	let s1 = h * 1;
+	let s2 = h * 2;
 	let s3 = h * 3;
 	let s4 = h * 4;
 	let s5 = h * 5;
@@ -93,12 +93,12 @@ $(document).ready(function(){
 	 //500vh
 		
 		if ($(window).width()<600){
-			s0 -= 50;
-			s1 -= 50;
-			s2 -= 50;
-			s3 -= 50;
-			s4 -= 50;
-			s5 -= 50;
+			s0 -= t;
+			s1 -= t;
+			s2 -= t;
+			s3 -= t;
+			s4 -= t;
+			s5 -= t;
 			
 		}
 		
