@@ -30,6 +30,7 @@ $(document).ready(function(){
 	
 	$("#fa").click(function(){
 		$(this).toggleClass("red");
+		alert(h);
 	});
 	
 	$("#dramabut").click(function(){
